@@ -22,13 +22,13 @@
                             <rect key="frame" x="0.0" y="0.0" width="280" height="100"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkj-yA-dTE">
-                                    <rect key="frame" x="78" y="13" width="124" height="44"/>
-                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="32"/>
+                                    <rect key="frame" x="76.5" y="13" width="127.5" height="44"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="32"/>
                                     <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icQ-Vo-R3e">
-                                    <rect key="frame" x="81.5" y="56" width="117" height="22"/>
+                                    <rect key="frame" x="81" y="56" width="117" height="22"/>
                                     <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                     <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -46,46 +46,46 @@
                             <rect key="frame" x="0.0" y="100" width="280" height="300"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hos-mq-tCd" userLabel="DayNameHolder">
-                                    <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="280" height="39"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-sQ-KQM">
-                                            <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="39"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEZ-V5-8qI">
-                                            <rect key="frame" x="40" y="0.0" width="40" height="50"/>
+                                            <rect key="frame" x="40" y="0.0" width="40" height="39"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MV2-L8-YSm">
-                                            <rect key="frame" x="80" y="0.0" width="40" height="50"/>
+                                            <rect key="frame" x="80" y="0.0" width="40" height="39"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSq-fc-UjC">
-                                            <rect key="frame" x="120" y="0.0" width="40" height="50"/>
+                                            <rect key="frame" x="120" y="0.0" width="40" height="39"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pH4-yF-IUz">
-                                            <rect key="frame" x="160" y="0.0" width="40" height="50"/>
+                                            <rect key="frame" x="160" y="0.0" width="40" height="39"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOc-84-O2k">
-                                            <rect key="frame" x="200" y="0.0" width="40" height="50"/>
+                                            <rect key="frame" x="200" y="0.0" width="40" height="39"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBX-SX-QBe">
-                                            <rect key="frame" x="240" y="0.0" width="40" height="50"/>
+                                            <rect key="frame" x="240" y="0.0" width="40" height="39"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -124,10 +124,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyd-1p-ETH" userLabel="DayOfMonthHolder">
-                                    <rect key="frame" x="0.0" y="50" width="280" height="250"/>
+                                    <rect key="frame" x="0.0" y="39" width="280" height="261"/>
                                     <subviews>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Onh-Vv-PZA">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="261"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K0R-zs-iWH">
                                                 <size key="itemSize" width="50" height="50"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -153,7 +153,7 @@
                                 <constraint firstAttribute="trailing" secondItem="hyd-1p-ETH" secondAttribute="trailing" id="Hb2-ZO-tYe"/>
                                 <constraint firstItem="Hos-mq-tCd" firstAttribute="leading" secondItem="sv7-ke-5rC" secondAttribute="leading" id="eEE-cP-drZ"/>
                                 <constraint firstItem="hyd-1p-ETH" firstAttribute="leading" secondItem="sv7-ke-5rC" secondAttribute="leading" id="pZI-fU-YXw"/>
-                                <constraint firstItem="Hos-mq-tCd" firstAttribute="height" secondItem="sv7-ke-5rC" secondAttribute="height" multiplier="0.16667" id="uD2-SH-FZ2"/>
+                                <constraint firstItem="Hos-mq-tCd" firstAttribute="height" secondItem="sv7-ke-5rC" secondAttribute="height" multiplier="0.13" id="uD2-SH-FZ2"/>
                                 <constraint firstItem="hyd-1p-ETH" firstAttribute="top" secondItem="Hos-mq-tCd" secondAttribute="bottom" id="zmM-Uu-qvZ"/>
                             </constraints>
                         </view>
