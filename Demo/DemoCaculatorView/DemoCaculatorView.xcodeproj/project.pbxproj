@@ -13,6 +13,10 @@
 		B29AFC361D5093A300CB8A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29AFC341D5093A300CB8A52 /* LaunchScreen.storyboard */; };
 		B29AFC421D5093F200CB8A52 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AFC401D5093F200CB8A52 /* MainVC.swift */; };
 		B29AFC431D5093F200CB8A52 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29AFC411D5093F200CB8A52 /* MainVC.xib */; };
+		B29AFC521D50952800CB8A52 /* CalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AFC4E1D50952800CB8A52 /* CalendarDayCell.swift */; };
+		B29AFC531D50952800CB8A52 /* CalendarFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AFC4F1D50952800CB8A52 /* CalendarFlowLayout.swift */; };
+		B29AFC541D50952800CB8A52 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AFC501D50952800CB8A52 /* CalendarHeaderView.swift */; };
+		B29AFC551D50952800CB8A52 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AFC511D50952800CB8A52 /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B29AFC371D5093A300CB8A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B29AFC401D5093F200CB8A52 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B29AFC411D5093F200CB8A52 /* MainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		B29AFC4E1D50952800CB8A52 /* CalendarDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarDayCell.swift; path = CalendarView/CalendarDayCell.swift; sourceTree = "<group>"; };
+		B29AFC4F1D50952800CB8A52 /* CalendarFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarFlowLayout.swift; path = CalendarView/CalendarFlowLayout.swift; sourceTree = "<group>"; };
+		B29AFC501D50952800CB8A52 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarHeaderView.swift; path = CalendarView/CalendarHeaderView.swift; sourceTree = "<group>"; };
+		B29AFC511D50952800CB8A52 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = CalendarView/CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,10 @@
 		B29AFC3E1D5093C600CB8A52 /* CalendarView */ = {
 			isa = PBXGroup;
 			children = (
+				B29AFC4E1D50952800CB8A52 /* CalendarDayCell.swift */,
+				B29AFC4F1D50952800CB8A52 /* CalendarFlowLayout.swift */,
+				B29AFC501D50952800CB8A52 /* CalendarHeaderView.swift */,
+				B29AFC511D50952800CB8A52 /* CalendarView.swift */,
 			);
 			name = CalendarView;
 			sourceTree = "<group>";
@@ -165,6 +177,10 @@
 			files = (
 				B29AFC2C1D5093A300CB8A52 /* AppDelegate.swift in Sources */,
 				B29AFC421D5093F200CB8A52 /* MainVC.swift in Sources */,
+				B29AFC551D50952800CB8A52 /* CalendarView.swift in Sources */,
+				B29AFC521D50952800CB8A52 /* CalendarDayCell.swift in Sources */,
+				B29AFC541D50952800CB8A52 /* CalendarHeaderView.swift in Sources */,
+				B29AFC531D50952800CB8A52 /* CalendarFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
