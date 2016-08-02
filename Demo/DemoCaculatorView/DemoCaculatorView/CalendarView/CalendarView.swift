@@ -14,7 +14,7 @@ let cellReuseIdentifier = "CalendarDayCell"
 let NUMBER_OF_DAYS_IN_WEEK = 7
 let MAXIMUM_NUMBER_OF_ROWS = 6
 
-let HEADER_DEFAULT_HEIGHT : CGFloat = 80.0
+let HEADER_DEFAULT_HEIGHT : CGFloat = 30.0
 
 
 let FIRST_DAY_INDEX = 0
@@ -175,7 +175,7 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
     
 
     override init(frame: CGRect) {
-        super.init(frame : CGRectMake(0.0, 0.0, 200.0, 200.0))
+        super.init(frame : frame)
         self.initialSetup()
     }
 

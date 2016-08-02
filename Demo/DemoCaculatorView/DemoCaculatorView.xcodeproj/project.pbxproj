@@ -17,6 +17,11 @@
 		B29AFC531D50952800CB8A52 /* CalendarFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AFC4F1D50952800CB8A52 /* CalendarFlowLayout.swift */; };
 		B29AFC541D50952800CB8A52 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AFC501D50952800CB8A52 /* CalendarHeaderView.swift */; };
 		B29AFC551D50952800CB8A52 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AFC511D50952800CB8A52 /* CalendarView.swift */; };
+		B29AFC5E1D50973900CB8A52 /* TBLCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AFC5C1D50973900CB8A52 /* TBLCalendar.swift */; };
+		B29AFC5F1D50973900CB8A52 /* TBLCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29AFC5D1D50973900CB8A52 /* TBLCalendar.xib */; };
+		B29AFC621D5099BA00CB8A52 /* sea_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29AFC611D5099BA00CB8A52 /* sea_background.jpg */; };
+		B29AFC641D509A6C00CB8A52 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B29AFC631D509A6C00CB8A52 /* background.png */; };
+		B29AFC661D509CB500CB8A52 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29AFC651D509CB500CB8A52 /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		B29AFC4F1D50952800CB8A52 /* CalendarFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarFlowLayout.swift; path = CalendarView/CalendarFlowLayout.swift; sourceTree = "<group>"; };
 		B29AFC501D50952800CB8A52 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarHeaderView.swift; path = CalendarView/CalendarHeaderView.swift; sourceTree = "<group>"; };
 		B29AFC511D50952800CB8A52 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = CalendarView/CalendarView.swift; sourceTree = "<group>"; };
+		B29AFC5C1D50973900CB8A52 /* TBLCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBLCalendar.swift; path = CalendarView/TBLCalendar.swift; sourceTree = "<group>"; };
+		B29AFC5D1D50973900CB8A52 /* TBLCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TBLCalendar.xib; path = CalendarView/TBLCalendar.xib; sourceTree = "<group>"; };
+		B29AFC611D5099BA00CB8A52 /* sea_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sea_background.jpg; sourceTree = "<group>"; };
+		B29AFC631D509A6C00CB8A52 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		B29AFC651D509CB500CB8A52 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29AFC661D509CB500CB8A52 /* EventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +59,7 @@
 		B29AFC1F1D5093A300CB8A52 = {
 			isa = PBXGroup;
 			children = (
+				B29AFC651D509CB500CB8A52 /* EventKit.framework */,
 				B29AFC2A1D5093A300CB8A52 /* DemoCaculatorView */,
 				B29AFC291D5093A300CB8A52 /* Products */,
 			);
@@ -75,6 +87,7 @@
 		B29AFC3D1D5093B000CB8A52 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B29AFC601D50999900CB8A52 /* Resources */,
 				B29AFC2F1D5093A300CB8A52 /* Main.storyboard */,
 				B29AFC321D5093A300CB8A52 /* Assets.xcassets */,
 				B29AFC341D5093A300CB8A52 /* LaunchScreen.storyboard */,
@@ -90,6 +103,8 @@
 				B29AFC4F1D50952800CB8A52 /* CalendarFlowLayout.swift */,
 				B29AFC501D50952800CB8A52 /* CalendarHeaderView.swift */,
 				B29AFC511D50952800CB8A52 /* CalendarView.swift */,
+				B29AFC5C1D50973900CB8A52 /* TBLCalendar.swift */,
+				B29AFC5D1D50973900CB8A52 /* TBLCalendar.xib */,
 			);
 			name = CalendarView;
 			sourceTree = "<group>";
@@ -101,6 +116,15 @@
 				B29AFC411D5093F200CB8A52 /* MainVC.xib */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B29AFC601D50999900CB8A52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B29AFC631D509A6C00CB8A52 /* background.png */,
+				B29AFC611D5099BA00CB8A52 /* sea_background.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29AFC361D5093A300CB8A52 /* LaunchScreen.storyboard in Resources */,
+				B29AFC5F1D50973900CB8A52 /* TBLCalendar.xib in Resources */,
+				B29AFC641D509A6C00CB8A52 /* background.png in Resources */,
 				B29AFC431D5093F200CB8A52 /* MainVC.xib in Resources */,
 				B29AFC331D5093A300CB8A52 /* Assets.xcassets in Resources */,
 				B29AFC311D5093A300CB8A52 /* Main.storyboard in Resources */,
+				B29AFC621D5099BA00CB8A52 /* sea_background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +207,7 @@
 				B29AFC551D50952800CB8A52 /* CalendarView.swift in Sources */,
 				B29AFC521D50952800CB8A52 /* CalendarDayCell.swift in Sources */,
 				B29AFC541D50952800CB8A52 /* CalendarHeaderView.swift in Sources */,
+				B29AFC5E1D50973900CB8A52 /* TBLCalendar.swift in Sources */,
 				B29AFC531D50952800CB8A52 /* CalendarFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

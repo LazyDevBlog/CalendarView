@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="DemoCaculatorView" customModuleProvider="target">
@@ -12,10 +14,36 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-JJ-VW7">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdZ-ki-JLz" customClass="TBLCalendar" customModule="DemoCaculatorView" customModuleProvider="target">
+                    <rect key="frame" x="84" y="60" width="432" height="402"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TdZ-ki-JLz" secondAttribute="height" multiplier="43:40" id="5Tr-Lj-ttz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <constraints>
+                <constraint firstItem="k7O-JJ-VW7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7xh-PV-T21"/>
+                <constraint firstItem="TdZ-ki-JLz" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.72" id="EuT-v8-CHy"/>
+                <constraint firstItem="TdZ-ki-JLz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="Ghn-Gr-x3a"/>
+                <constraint firstAttribute="trailing" secondItem="k7O-JJ-VW7" secondAttribute="trailing" id="Lcn-aA-CGE"/>
+                <constraint firstItem="TdZ-ki-JLz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cQD-z5-qAE"/>
+                <constraint firstItem="k7O-JJ-VW7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dgW-QK-5mW"/>
+                <constraint firstAttribute="bottom" secondItem="k7O-JJ-VW7" secondAttribute="bottom" id="eym-Tc-Kvf"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="background.png" width="812" height="1390"/>
+    </resources>
 </document>
