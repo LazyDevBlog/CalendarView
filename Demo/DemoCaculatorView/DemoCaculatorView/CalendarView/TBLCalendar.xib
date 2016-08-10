@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TBLCalendar" customModule="DemoCaculatorView" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TBLCalendar" customModule="DemoCaculatorView" customModuleProvider="target">
+            <connections>
+                <outlet property="calendarView" destination="hyd-1p-ETH" id="k68-Y4-Pum"/>
+                <outlet property="menuView" destination="Hos-mq-tCd" id="lCn-Oa-In0"/>
+                <outlet property="monthLabel" destination="icQ-Vo-R3e" id="A0F-7c-YUu"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="430" height="400"/>
@@ -45,104 +51,17 @@
                         <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="sv7-ke-5rC" userLabel="CalendarHolder">
                             <rect key="frame" x="0.0" y="100" width="280" height="300"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hos-mq-tCd" userLabel="DayNameHolder">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hos-mq-tCd" userLabel="MenuView" customClass="CVCalendarMenuView" customModule="DemoCaculatorView" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="280" height="39"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-sQ-KQM">
-                                            <rect key="frame" x="0.0" y="0.0" width="40" height="39"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEZ-V5-8qI">
-                                            <rect key="frame" x="40" y="0.0" width="40" height="39"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MV2-L8-YSm">
-                                            <rect key="frame" x="80" y="0.0" width="40" height="39"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSq-fc-UjC">
-                                            <rect key="frame" x="120" y="0.0" width="40" height="39"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pH4-yF-IUz">
-                                            <rect key="frame" x="160" y="0.0" width="40" height="39"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOc-84-O2k">
-                                            <rect key="frame" x="200" y="0.0" width="40" height="39"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBX-SX-QBe">
-                                            <rect key="frame" x="240" y="0.0" width="40" height="39"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="qCr-sQ-KQM" firstAttribute="top" secondItem="Hos-mq-tCd" secondAttribute="top" id="0dr-Vv-Vxb"/>
-                                        <constraint firstItem="bSq-fc-UjC" firstAttribute="top" secondItem="Hos-mq-tCd" secondAttribute="top" id="7Hw-cE-PhQ"/>
-                                        <constraint firstItem="MV2-L8-YSm" firstAttribute="leading" secondItem="hEZ-V5-8qI" secondAttribute="trailing" id="9s6-vr-wcs"/>
-                                        <constraint firstItem="OOc-84-O2k" firstAttribute="width" secondItem="Hos-mq-tCd" secondAttribute="width" multiplier="0.143" id="EBO-aX-2wy"/>
-                                        <constraint firstItem="MV2-L8-YSm" firstAttribute="top" secondItem="Hos-mq-tCd" secondAttribute="top" id="F9j-xS-VvP"/>
-                                        <constraint firstAttribute="bottom" secondItem="pH4-yF-IUz" secondAttribute="bottom" id="GSe-Lv-ThZ"/>
-                                        <constraint firstItem="qCr-sQ-KQM" firstAttribute="leading" secondItem="Hos-mq-tCd" secondAttribute="leading" id="Hph-XW-rGW"/>
-                                        <constraint firstItem="OOc-84-O2k" firstAttribute="top" secondItem="Hos-mq-tCd" secondAttribute="top" id="ITn-xx-VbJ"/>
-                                        <constraint firstItem="pH4-yF-IUz" firstAttribute="leading" secondItem="bSq-fc-UjC" secondAttribute="trailing" id="J5l-uK-lHF"/>
-                                        <constraint firstItem="WBX-SX-QBe" firstAttribute="top" secondItem="Hos-mq-tCd" secondAttribute="top" id="KmV-mM-t4o"/>
-                                        <constraint firstItem="MV2-L8-YSm" firstAttribute="width" secondItem="Hos-mq-tCd" secondAttribute="width" multiplier="0.143" id="Kzj-cj-xAg"/>
-                                        <constraint firstItem="bSq-fc-UjC" firstAttribute="width" secondItem="Hos-mq-tCd" secondAttribute="width" multiplier="0.143" id="LSp-1C-nfj"/>
-                                        <constraint firstItem="pH4-yF-IUz" firstAttribute="top" secondItem="Hos-mq-tCd" secondAttribute="top" id="Lk6-Bf-v0h"/>
-                                        <constraint firstAttribute="trailing" secondItem="WBX-SX-QBe" secondAttribute="trailing" id="N9x-bH-RCj"/>
-                                        <constraint firstItem="hEZ-V5-8qI" firstAttribute="width" secondItem="Hos-mq-tCd" secondAttribute="width" multiplier="0.143" id="OUI-wY-NKP"/>
-                                        <constraint firstItem="OOc-84-O2k" firstAttribute="leading" secondItem="pH4-yF-IUz" secondAttribute="trailing" id="PCw-hL-w9u"/>
-                                        <constraint firstItem="hEZ-V5-8qI" firstAttribute="leading" secondItem="qCr-sQ-KQM" secondAttribute="trailing" id="R3a-2W-c6P"/>
-                                        <constraint firstAttribute="bottom" secondItem="bSq-fc-UjC" secondAttribute="bottom" id="T0s-xP-3N8"/>
-                                        <constraint firstAttribute="bottom" secondItem="OOc-84-O2k" secondAttribute="bottom" id="TB8-wL-R7Y"/>
-                                        <constraint firstItem="qCr-sQ-KQM" firstAttribute="width" secondItem="Hos-mq-tCd" secondAttribute="width" multiplier="0.143" id="Tst-Dw-CkN"/>
-                                        <constraint firstItem="pH4-yF-IUz" firstAttribute="width" secondItem="Hos-mq-tCd" secondAttribute="width" multiplier="0.143" id="UXM-oi-5d4"/>
-                                        <constraint firstAttribute="bottom" secondItem="WBX-SX-QBe" secondAttribute="bottom" id="VdA-Fh-TQ8"/>
-                                        <constraint firstAttribute="bottom" secondItem="hEZ-V5-8qI" secondAttribute="bottom" id="YKM-25-Cfu"/>
-                                        <constraint firstItem="bSq-fc-UjC" firstAttribute="leading" secondItem="MV2-L8-YSm" secondAttribute="trailing" id="qhE-S7-ZFx"/>
-                                        <constraint firstAttribute="bottom" secondItem="MV2-L8-YSm" secondAttribute="bottom" id="rbh-XE-qSD"/>
-                                        <constraint firstItem="hEZ-V5-8qI" firstAttribute="top" secondItem="Hos-mq-tCd" secondAttribute="top" id="tcc-Uv-2Nx"/>
-                                        <constraint firstAttribute="bottom" secondItem="qCr-sQ-KQM" secondAttribute="bottom" id="xrG-Bk-oda"/>
-                                        <constraint firstItem="WBX-SX-QBe" firstAttribute="leading" secondItem="OOc-84-O2k" secondAttribute="trailing" id="yaf-DE-Mck"/>
-                                    </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyd-1p-ETH" userLabel="DayOfMonthHolder">
+                                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyd-1p-ETH" userLabel="CalendarView" customClass="CVCalendarView" customModule="DemoCaculatorView" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="39" width="280" height="261"/>
-                                    <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Onh-Vv-PZA">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="261"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K0R-zs-iWH">
-                                                <size key="itemSize" width="50" height="50"/>
-                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            </collectionViewFlowLayout>
-                                        </collectionView>
-                                    </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstItem="Onh-Vv-PZA" firstAttribute="top" secondItem="hyd-1p-ETH" secondAttribute="top" id="RDY-bu-SZ0"/>
-                                        <constraint firstItem="Onh-Vv-PZA" firstAttribute="leading" secondItem="hyd-1p-ETH" secondAttribute="leading" id="cXd-iF-DH9"/>
-                                        <constraint firstAttribute="bottom" secondItem="Onh-Vv-PZA" secondAttribute="bottom" id="ge0-OC-och"/>
-                                        <constraint firstAttribute="trailing" secondItem="Onh-Vv-PZA" secondAttribute="trailing" id="ug6-VI-oea"/>
-                                    </constraints>
+                                    <connections>
+                                        <outlet property="calendarAppearanceDelegate" destination="-1" id="nmz-fl-aIj"/>
+                                        <outlet property="calendarDelegate" destination="-1" id="gHZ-OH-gsJ"/>
+                                    </connections>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
